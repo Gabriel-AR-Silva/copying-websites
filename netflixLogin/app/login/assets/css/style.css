@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonte/HelveticaBlklt.ttf') format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    background-image: url('../image/bckg-img.jpg'); /* I need to fix this background for mobile version  */
+    background-repeat: no-repeat;
+    background-position:left top;
+    background-size: 145%;
+}
+
+.background-effect{
+    width: 100%;
+    height: 105%;
+    background-color: black;
+    position: absolute;
+    opacity: .5;
+    z-index: -1;
+}
+
+
+
+    /* error, solve after */
+header{
+    width: 100%;
+    height: 90px;
+    padding:20px 0px 0px;
+}
+header nav{
+    margin-left: 40px;
+}
+
+ #netflix-logo{
+  color: red !important;
+}
+    /* end errorrrrrrrrr */
+
+
+
+.login-container{
+    width: 580px;
+    height: 87vh;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.login-box{
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 450px;
+    height: 100%;
+    padding: 60px 68px 40px;
+}
+.login-box h1{
+    margin-bottom: 28px;
+    font-size: 32px;
+}
+input[type="text"], input[type="password"], button{
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+}
+input[type="text"], input[type="password"]{
+    background-color: #333333;
+    color: #8c8c8c;
+    /* fonte trocar */
+    padding: 16px 20px;
+    font-size: 16px;
+    border: none;
+    outline-style: none;
+}
+.login-email, .login-passw{
+    padding-bottom: 16px;
+}
+
+button{
+    background-color: red;
+    margin: 24px 0px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.remenber-help{
+    display: flex;
+    justify-content: space-between;
+}
+.input-login-remenber-me{
+    display: flex;
+    align-items: center;
+}
+#remenber-me{
+    width: 16px;
+    height: 16px;
+}
+.remenber-me-label{
+    padding-left: 5px;
+}
+.remenber-me-label span, .need-help-login{
+    color: #b3b3b3;
+    font-size: 13px;
+}
+.need-help-login, .registration-login a, .recaptcha a{
+    text-decoration: none;
+}
+.need-help-login:hover, .registration-login a:hover, .recaptcha a:hover{
+    text-decoration: underline;
+}
+
+.registration-login{
+    margin-top: 100px;
+}
+.registration-login p{
+    color: #737373;
+    font-size: 16px;
+}
+.recaptcha{
+    font-size: 13px;
+    color: #8c8c8c;
+    margin-top: 11px;
+}
+.recaptcha a{
+    color: #0071eb;
+}
+
